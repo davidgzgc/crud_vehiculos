@@ -10,6 +10,7 @@
         <th>Tipo Transmision</th>
         <th>NO VIN</th>
         <th>Cant. puertas</th>
+        <th>combustible</th>
     </tr>
     <?php foreach ($vehiculos as $vehiculo): ?>
     <tr>
@@ -21,6 +22,7 @@
         <td><?php echo $vehiculo->tipo_transmision; ?></td>
         <td><?php echo $vehiculo->no_vin; ?></td>
         <td><?php echo $vehiculo->cant_puertas; ?></td>
+        <td><?php echo $vehiculo->combustible; ?></td>
         <td>
             <a href="<?php echo site_url('vehiculos/editar/' . $vehiculo->id); ?>">Editar</a>
             <a href="<?php echo site_url('vehiculos/eliminar/' . $vehiculo->id); ?>">Eliminar</a>

@@ -22,7 +22,8 @@ class Vehiculos extends CI_Controller {
                 'color' => $this->input->post('color'),
                 'tipo_transmision' => $this->input->post('tipo_transmision'),
                 'no_vin' => $this->input->post('no_vin'),
-                'cant_puertas' => $this->input->post('cant_puertas')
+                'cant_puertas' => $this->input->post('cant_puertas'),
+                'combustible' =>$this->input->post('combustible')
 
             );
             $this->Vehiculos_model->crear_vehiculos($data);
@@ -36,7 +37,19 @@ class Vehiculos extends CI_Controller {
         
         if ($this->input->post()) {
             $dataUpdate = array(
-                'placa' => $this->input->post('placa')
+                'placa' => $this->input->post('placa'),
+                'modelo' => $this->input->post('modelo'),                
+                'marca' => $this->input->post('marca'),
+                'color' => $this->input->post('color'),
+                'tipo_transmision' => $this->input->post('tipo_transmision'),
+                'no_vin' => $this->input->post('no_vin'),
+                'cant_puertas' => $this->input->post('cant_puertas'),
+                'combustible' =>$this->input->post('combustible')
+
+
+
+
+                
             );
             $this->Vehiculos_model->actualizar_vehiculos($id, $dataUpdate);
             redirect('vehiculos');

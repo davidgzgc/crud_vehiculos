@@ -26,7 +26,12 @@
         
     <label for="cant_puertas">cant_puertas:</label>
     <input type="text" name="cant_puertas" value="<?php echo $vehiculo->cant_puertas; ?>" required><br>
-    
+
+
+
+    <label for="combustible">combustible:</label>
+    <input type="text" name="combustible" value="<?php echo $vehiculo->combustible; ?>" required><br>
+
     
     <input type="submit" value="Actualizar vehiculo"><br>
 </form>

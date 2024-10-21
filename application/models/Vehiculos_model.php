@@ -13,9 +13,9 @@ class Vehiculos_model extends CI_Model {
 
     
     public function obtener_vehiculo($id) {
-    $query = $this->db->get_where('vehiculos', array('id' => $id));
-    return $query->row();
-    
+        $query = $this->db->get_where('vehiculos', array('id' => $id));
+        return $query->row();
+
     }
 
 

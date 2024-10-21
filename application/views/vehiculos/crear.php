@@ -52,5 +52,14 @@
 
   </div><br>
     
+
+<div>
+
+<label for="combustible">combustible</label>
+<input type="text" name="combustible" required> 
+
+
+</div><br>
+
     <input type="submit" value="Crear vehiculos">
 </form>
